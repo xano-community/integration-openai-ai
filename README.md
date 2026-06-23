@@ -70,7 +70,7 @@ Sends a conversation history to OpenAI's Chat Completions API and returns the mo
 
 ### `openai_create_embedding`
 
-Converts text into a numerical vector representation using OpenAI's embedding models. Returns a high-dimensional float array that captures semantic meaning of the input. Ideal for building semantic search, recommendation systems, and content similarity features. Store the resulting vectors in Xano's database for efficient similarity queries.
+Converts text into a numerical vector representation using OpenAI's embedding models. Returns an OpenAI embeddings response object; the vector is at data[0].embedding. Ideal for building semantic search, recommendation systems, and content similarity features. Store the resulting vectors in Xano's database for efficient similarity queries.
 
 ## License
 
